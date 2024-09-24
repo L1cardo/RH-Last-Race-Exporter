@@ -1,0 +1,13 @@
+{
+    "name": "Last Race Exporter",
+    "author": "Licardo",
+    "author_uri": "https://space.bilibili.com/7403418",
+    "description": "Export last Race result with a nice format",
+    "info_uri": "https://github.com/L1cardo/RH-Last-Race-Exporter/",
+    "license": "MIT",
+    "license_uri": "https://github.com/L1cardo/RH-Last-Race-Exporter/blob/main/LICENSE",
+    "version": "1.0.0",
+    "required_rhapi_version": "1.0",
+    "update_uri": null,
+    "text_domain": null
+}
