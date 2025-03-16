@@ -1,0 +1,11 @@
+{
+    "domain": "last_race_exporter",
+    "name": "Last Race Exporter",
+    "author": "Licardo",
+    "license": "MIT",
+    "description": "Export last Race result with a nice format",
+    "documentation_uri": "https://github.com/L1cardo/RH-Last-Race-Exporter",
+    "required_rhapi_version": "1.0",
+    "version": "1.0.0",
+    "category": ["Race Management"]
+}
