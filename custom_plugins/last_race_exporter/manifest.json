@@ -2,6 +2,7 @@
     "domain": "last_race_exporter",
     "name": "Last Race Exporter",
     "author": "Licardo",
+    "author_uri": "https://space.bilibili.com/7403418",
     "license": "MIT",
     "description": "Export last Race result with a nice format",
     "documentation_uri": "https://github.com/L1cardo/RH-Last-Race-Exporter",
