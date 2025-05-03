@@ -6,6 +6,8 @@ on:
       - main
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # Every day at midnight
 
 jobs:
   validation:
@@ -13,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⤵️ Check out code from GitHub
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: 🚀 Run RHFest validation
         uses: docker://ghcr.io/rotorhazard/rhfest-action:latest
