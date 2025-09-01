@@ -33,6 +33,10 @@ jobs:
       - name: Get Previous tag
         id: previoustag
         uses: amitsingh-007/next-release-tag@v6.3.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          tag_prefix: ''
+          tag_template: ''
 
       - name: 📝 Create Release
         uses: softprops/action-gh-release@v2
