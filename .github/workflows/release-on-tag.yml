@@ -32,11 +32,7 @@ jobs:
 
       - name: Get Previous tag
         id: previoustag
-        uses: amitsingh-007/next-release-tag@v6.3.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tag_prefix: 'v'
-          tag_template: 'yyyy.mm.dd'
+        uses: WyriHaximus/github-action-get-previous-tag@v1
 
       - name: 📝 Create Release
         uses: softprops/action-gh-release@v2
@@ -46,7 +42,7 @@ jobs:
           body: |
             ${{ github.event.head_commit.message }}
 
-            **Full Changelog**: https://github.com/L1cardo/RH-Last-Race-Exporter/compare/${{ steps.previoustag.outputs.prev_release_tag }}...${{ github.ref_name }}
+            **Full Changelog**: https://github.com/L1cardo/RH-Last-Race-Exporter/compare/${{ steps.previoustag.outputs.tag }}...${{ github.ref_name }}
           draft: false
           prerelease: false
           files: last_race_exporter.zip
